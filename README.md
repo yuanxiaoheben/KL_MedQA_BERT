@@ -1,7 +1,7 @@
-# Bert
+# BERT enhanced by medical QA pairs and knowledge labels
 Improving BERT Performance on Medical Named Entity Recognition by Online Question-Answering Pairs and Knowledge Labels
-### Pretrain
-Using [BERT-pytorch](https://github.com/codertimo/BERT-pytorch) for pretrained, pretrained sequence data could download from [UCSC](http://hgdownload.cse.ucsc.edu/goldenPath/hg38/database/cytoBand.txt.gz). The please transfer coodinate to DNA sequence, and then segment them to the corpus of one line with two 400bp adjacent DNA sequences.
+### Knowledge Base
+[kb_data_all.json]kb_data_all.json
 
 ### Train
 Using [bert_ensemble_train.py](https://github.com/yuanxiaoheben/DeepDuSite/blob/master/bert_pytorch/bert_ensemble_train.py) for training.
