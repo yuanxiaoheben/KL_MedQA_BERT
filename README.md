@@ -1,7 +1,7 @@
 # BERT enhanced by medical QA pairs and knowledge labels
 Improving BERT Performance on Medical Named Entity Recognition by Online Question-Answering Pairs and Knowledge Labels
 ### Knowledge Base
-[kb_data_all.json]kb_data_all.json
+Knowledge base is in: [kb_data_all.json](https://github.com/yuanxiaoheben/KL_MedQA_BERT/blob/master/kb_data_all.json)
 
 ### Train
 Using [bert_ensemble_train.py](https://github.com/yuanxiaoheben/DeepDuSite/blob/master/bert_pytorch/bert_ensemble_train.py) for training.
