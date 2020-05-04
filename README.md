@@ -6,19 +6,13 @@ Knowledge base is in: [kb_data_all.json](https://github.com/yuanxiaoheben/KL_Med
 For example: "blood tension": "0001000000" means "blood tension" in the diagnosis class.
 
 ### Train
-Using [bert_ensemble_train.py](https://github.com/yuanxiaoheben/DeepDuSite/blob/master/bert_pytorch/bert_ensemble_train.py) for training.
+Using [train_kl_bert.py](https://github.com/yuanxiaoheben/DeepDuSite/blob/master/bert_pytorch/bert_ensemble_train.py) for training.
  ``` shell
- python bert_ensemble_train.py \
- --train_corpus train_label.csv \
- --validation_corpus valid_label.csv \
- --bert_path bert.model.ep9 \
- --saved_path ./
+ python train_kl_bert.py \
+--train_corpus ../weak_label/train_ner_0929.csv \
+--validation_corpus ../weak_label/test_ner_0926.csv \
+--bert_path ../tcm_bert/finetuned_lm_domain_corpus/pytorch_bert_model.11.tar.gz \
+--kl_path ../weak_label/saved/bert.kl.1.model \
+--saved_path ./
  ```
  
- ### Test
- Using [bert_ensemble_test.py](https://github.com/yuanxiaoheben/DeepDuSite/blob/master/bert_pytorch/bert_ensemble_test.py) for test.
- ``` shell
- python bert_ensemble_test.py \
- --test_corpus test_label.csv \
- --model_path bert.ensemble.ep1 
- ```
