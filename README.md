@@ -5,7 +5,10 @@ Knowledge base is in: [kb_data_all.json](https://github.com/yuanxiaoheben/KL_Med
 
 For example: "blood tension": "0001000000" means "blood tension" in the diagnosis class.
 
-### Train
+### BERT Pre-Training
+Using code from the [BERT PyTorch implement](https://github.com/huggingface/transformers)
+
+### NER Train
 Using [train_kl_bert.py](https://github.com/yuanxiaoheben/KL_MedQA_BERT/blob/master/train_kl_bert.py) for training.
  ``` shell
  python train_kl_bert.py \
