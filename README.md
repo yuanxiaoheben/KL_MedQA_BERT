@@ -9,10 +9,10 @@ For example: "blood tension": "0001000000" means "blood tension" in the diagnosi
 Using [train_kl_bert.py](https://github.com/yuanxiaoheben/KL_MedQA_BERT/blob/master/train_kl_bert.py) for training.
  ``` shell
  python train_kl_bert.py \
---train_corpus ../weak_label/train_ner.csv \
---validation_corpus ../weak_label/dev_ner.csv \
---bert_path ../pytorch_bert_model.tar.gz \
---kl_path ../bert.kl.model \
+--train_corpus train_ner.csv \
+--validation_corpus dev_ner.csv \
+--bert_path pytorch_bert_model.tar.gz \
+--kl_path bert.kl.model \
 --saved_path ./
  ```
  
